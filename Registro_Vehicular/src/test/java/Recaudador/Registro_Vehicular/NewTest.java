@@ -16,7 +16,7 @@ public class NewTest {
 	  WebDriver driver = new ChromeDriver();
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  
-	  driver.get("http://wls32.tgc.mx:8160/re_login");
+	  driver.get("...");
 	  
 	  driver.findElement(By.cssSelector("input[name='txtUsuario']")).sendKeys("RECAUDADOR");
 	  driver.findElement(By.cssSelector("input[name='txtPass']")).sendKeys("THEBIGONE");
