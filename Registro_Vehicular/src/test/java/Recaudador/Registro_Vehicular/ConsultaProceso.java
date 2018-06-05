@@ -20,12 +20,8 @@ public class ConsultaProceso extends Base{
 	static RegistroVehicular rv;
 	static Properties prop = new Properties();
 	static FileInputStream fis;
-	static Connection con;
 	
-	/*public static void main(String args[]){  
 
-
-		}    */
   @BeforeClass
   public static void setup() throws IOException {
 	  driver=initializerDriver();
@@ -34,18 +30,7 @@ public class ConsultaProceso extends Base{
 	  rv = new RegistroVehicular(driver);
 	  fis = new FileInputStream("..\\Registro_Vehicular\\src\\main\\java\\resources\\Data.properties");
 	  prop = new Properties();	
-	  
-	  String host = "odb12.tgc.mx";
-	  String port = "1521";
-	  
-		/*try{  
-			 
-		Class.forName("oracle.jdbc.driver.OracleDriver");  
 
-		con=DriverManager.getConnection(  
-		"jdbc:oracle:thin:@odb12.tgc.mx:1521:rec","TEST_RECCUU","test_reccuu");  
-
-		}catch(Exception e){ System.out.println(e);}  */
   }
 
   @Test
